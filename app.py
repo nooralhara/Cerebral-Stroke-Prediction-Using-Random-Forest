@@ -33,6 +33,6 @@ if st.button('Predict'):
     probability = model.predict_proba(scaled_data)[0][1]
  
     if prediction[0] == 1:
-        st.error(f"The model predicts a possibility of stroke (probability: {probability:.1%})")
+        st.error("The model predicts a possibility of stroke")
     else:
-        st.success(f"The model predicts no stroke (probability of stroke: {probability:.1%})")
+        st.success("The model predicts no stroke")

@@ -31,8 +31,10 @@ if st.button('Predict'):
     scaled_data = scaler.transform(input_data)
     prediction = model.predict(scaled_data)
     probability = model.predict_proba(scaled_data)[0][1]
+    st.metric("Stroke Risk Probability", f"{probability:.1%}")
  
-    if prediction[0] == 1:
-        st.error(f"The model predicts a possibility of stroke (probability: {probability:.1%})")
+    if probability >= 0.3:
+        st.error("Higher Stroke Risk")
     else:
-        st.success(f"The model predicts no stroke (probability of stroke: {probability:.1%})")
+        st.success("Lower Stroke Risk")
+        

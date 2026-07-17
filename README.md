@@ -53,12 +53,12 @@ The project includes multiple models to compare on a stroke dataset with a chall
 
 # Structure:
 
-app.py ---> Streamlit Application
-RFC_model.pkl ---> Trained RandomForestClassifier Model
-scaler_RFC.pkl ---> Fitted StandardScaler
-dataset.csv ---> Dataset used in project
-RFC_Stroke.ipynb ---> Full analysis, preprocessing, visualization, and training notebook
-Requirements.txt ---> Python dependencies
+app.py ---> Streamlit Application /
+RFC_model.pkl ---> Trained RandomForestClassifier Model /
+scaler_RFC.pkl ---> Fitted StandardScaler /
+dataset.csv ---> Dataset used in project /
+RFC_Stroke.ipynb ---> Full analysis, preprocessing, visualization, and training notebook /
+Requirements.txt ---> Python dependencies /
 README.md
 
 

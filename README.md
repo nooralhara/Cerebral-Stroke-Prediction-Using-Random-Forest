@@ -22,12 +22,12 @@ The project includes multiple models to compare on a stroke dataset with a chall
 # Project Pipeline:
 
 1. Preprocessing:
-   Explored the dataset structure and target distribution.
-   Handling missing and redundant values (BMI ---> Mean Imputed, Smoking_Status ---> Missing values replaced with "Unknown").
-   Encoding categorical values using 'LabelEncoder'.
-   Scaling numerical values using 'StandardScaler'.
-   Addressed class imbalance with SMOTE combined with Random Under Sampling.
-   Split data into training and test sets (80%/20%).
+   1. Explored the dataset structure and target distribution.
+   2. Handling missing and redundant values (BMI ---> Mean Imputed, Smoking_Status ---> Missing values replaced with "Unknown").
+   3. Encoding categorical values using 'LabelEncoder'.
+   4. Scaling numerical values using 'StandardScaler'.
+   5. Addressed class imbalance with SMOTE combined with Random Under Sampling.
+   6. Split data into training and test sets (80%/20%).
 
 2. Visualization:
    Visualized data distribution before and after resampling to confirm balance.
@@ -53,13 +53,13 @@ The project includes multiple models to compare on a stroke dataset with a chall
 
 # Structure:
 
-app.py ---> Streamlit Application /
-RFC_model.pkl ---> Trained RandomForestClassifier Model /
-scaler_RFC.pkl ---> Fitted StandardScaler /
-dataset.csv ---> Dataset used in project /
-RFC_Stroke.ipynb ---> Full analysis, preprocessing, visualization, and training notebook /
-Requirements.txt ---> Python dependencies /
-README.md
+1. app.py ---> Streamlit Application
+2. RFC_model.pkl ---> Trained RandomForestClassifier Model
+3. scaler_RFC.pkl ---> Fitted StandardScaler
+4. dataset.csv ---> Dataset used in project
+5. RFC_Stroke.ipynb ---> Full analysis, preprocessing, visualization, and training notebook
+6. Requirements.txt ---> Python dependencies
+7. README.md
 
 
 
